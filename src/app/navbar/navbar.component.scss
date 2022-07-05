@@ -1,0 +1,64 @@
+@import "/src/styles.scss";
+
+* {
+    font-family: 'Circular Std', sans-serif;                          
+    color: #263238;
+    }
+
+nav {
+    background: white;
+    padding: 15px 50px;
+
+    // nav ul li
+    ul li {
+        padding: 15px 0;
+        cursor: pointer;
+
+        // nav ul li .nav-item
+        &.nav-item {
+            margin: 0 14px;
+        }
+
+        // &.nav-item::after {
+        //     position: absolute;
+        //     content: '';
+        //     left: 0;
+        //     background: #33ffff;
+        //     opacity: 0;
+        //     transition: all 0.2s linear;
+        // }
+        
+        // nav ul li a
+        a {
+            color: #9AA1A8;
+            font-size: 18px;
+            text-decoration: none;
+            transition: .4s;
+        }
+    }
+
+    ul li:hover a {
+        color: #263238;
+    }
+
+    button {
+        font-size: 18px;
+        background: $btn-color;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        width: 120px;
+        height: 50px;
+        color: #fff;
+        margin: 0 5px;
+      }
+
+}
+
+    nav ul li.btn{
+    display: none;
+    }
+
+    nav ul li.btn.hide i:before{
+    content: '\f00d';
+    }
